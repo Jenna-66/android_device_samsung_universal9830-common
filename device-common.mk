@@ -335,6 +335,10 @@ $(call soong_config_set,cbd,protocol,sipc)
 PRODUCT_PACKAGES += \
     SamsungDoze
 
+# Remove unwanted packages
+PRODUCT_PACKAGES += \
+    RemovePackages
+
 # Sensors
 PRODUCT_PACKAGES += \
     android.hardware.contexthub@1.0.vendor:64 \
